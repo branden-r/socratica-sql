@@ -14,7 +14,7 @@ CREATE TABLE earthquakes (
 	"depth" NUMERIC,
 	magnitude NUMERIC,
 	calculation_method CHARACTER VARYING,
-	network_id CHARACTER VARYING,
+	network_id CHARACTER VARYING UNIQUE,
 	place CHARACTER VARYING,
 	cause CHARACTER VARYING
 );
