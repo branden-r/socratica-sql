@@ -1,2 +1,2 @@
--- Question 1: Display the table.
+-- Question 01: Display the table.
 SELECT * FROM earthquakes;
