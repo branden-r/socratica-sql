@@ -1,7 +1,10 @@
+-- drop the table in case we are re-running the query
 DROP TABLE IF EXISTS earthquakes;
 
+-- called my table "earthquakes" instead of "earthquake"
 CREATE TABLE earthquakes (
-	earthquake_id INTEGER PRIMARY KEY,
+	-- column names and data types pulled straight from the video
+	earthquake_id INTEGER PRIMARY KEY, -- a primary key identifies the row
 	occurred_on TIMESTAMP WITHOUT TIME ZONE,
 	latitude NUMERIC,
 	longitude NUMERIC,
@@ -13,8 +16,9 @@ CREATE TABLE earthquakes (
 	cause CHARACTER VARYING
 );
 
+-- populate the table we just made with data from the csv
 COPY earthquakes
-FROM 'D:/data/earthquakes.csv'
-DELIMITER ',' CSV HEADER;
+FROM 'D:/data/earthquakes.csv' -- change this to wherever you put your earthquake data
+DELIMITER ',' CSV HEADER; 
 
-SELECT * FROM earthquakes;
+SELECT * FROM earthquakes; -- display the entire table
