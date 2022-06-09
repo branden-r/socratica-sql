@@ -1,4 +1,6 @@
--- Question 00: Import the earthquake data.
+-- Question 00: Import and display the earthquake data. 
+-- Your query should work for both its initial run and subsequent runs.
+
 -- drop the table in case we are re-running the query
 DROP TABLE IF EXISTS earthquakes;
 
