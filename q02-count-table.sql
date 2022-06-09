@@ -1,2 +1,2 @@
--- Question 02: Count the number of rows in the table.
+-- Question 02: Count the total number of earthquakes.
 SELECT COUNT(*) FROM earthquakes;
