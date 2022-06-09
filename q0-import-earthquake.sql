@@ -1,3 +1,4 @@
+-- Question 0: Import the earthquake data.
 -- drop the table in case we are re-running the query
 DROP TABLE IF EXISTS earthquakes;
 
