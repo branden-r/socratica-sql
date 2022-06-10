@@ -1,9 +1,12 @@
 -- Question 19: How many aftershocks occurred as a result of the second largest earthquake?
+-- An aftershock is an earthquake that meets the following criteria:
+-- (1) occurs near the original quake.
+-- (2) occurs within a week of the orginal quake.
 
 SELECT COUNT(*) 
 FROM earthquakes
 -- percent symbol matches zero or more characters
--- this will match any row where the place column contains the word Honshu before the word Japan
+-- this query will match any row where the place column contains the word Honshu before the word Japan
 
 -- between is shorthand for searching for a range of data
 -- between is inclusive - it includes values that match the beginning and end of the specified range
