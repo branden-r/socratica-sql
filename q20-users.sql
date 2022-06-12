@@ -18,7 +18,7 @@
 --      encrypted password: 9a834yva9fn3493yn
 --
 -- Display the user table.
--- Your query should work for the initial run, as well as subsequent runs.
+-- Your query should work for its initial run, as well as subsequent runs.
 
 DROP TABLE IF EXISTS users;
 
